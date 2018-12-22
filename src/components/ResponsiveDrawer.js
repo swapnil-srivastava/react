@@ -148,6 +148,7 @@ class ResponsiveDrawer extends React.Component {
             Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus
             at augue. At augue eget arcu dictum varius duis at consectetur lorem. Velit sed
             ullamcorper morbi tincidunt. Lorem donec massa sapien faucibus et molestie ac.
+            changes changes 
           </Typography>
           <Typography paragraph>
             Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla

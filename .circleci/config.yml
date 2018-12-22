@@ -39,7 +39,7 @@ jobs:
       - run: yarn start
 
       # deploying to firebase using the command below
-      # - run: yarn firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+      - run: yarn firebase deploy --token=$FIREBASE_TOKEN --non-interactive
 
       # - run:
       #     command: |
