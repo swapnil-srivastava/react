@@ -36,7 +36,7 @@ jobs:
 
 
       # already ng build is being executed in docker file to create dist folder
-      - run: yarn start
+      - run: yarn build 
 
       # deploying to firebase using the command below
       - run: yarn firebase deploy --token=$FIREBASE_TOKEN --non-interactive
