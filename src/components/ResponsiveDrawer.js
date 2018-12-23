@@ -17,6 +17,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 
+import { Link } from 'react-router-dom';
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -66,24 +68,26 @@ class ResponsiveDrawer extends React.Component {
     const drawer = (
       <div>
         <div className={classes.toolbar} />
-        <Divider />
+        <Divider />        
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
+          {['Home', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+             <Link to='/test'> 
+                <ListItem button key={text}>
+                  <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                  <ListItemText primary={text}></ListItemText>
+                </ListItem>
+              </Link> 
           ))}
         </List>
-        <Divider />
-        <List>
+        {/* <Divider />  */}
+        {/* <List>
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
-        </List>
+        </List> */}
       </div>
     );
 
