@@ -71,7 +71,7 @@ class ResponsiveDrawer extends React.Component {
         <Divider />        
         <List>
           {['Home', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-             <Link to='/test'> 
+             <Link to={`/test/${index}`} style={{ textDecoration: 'none' }}> 
                 <ListItem button key={text}>
                   <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                   <ListItemText primary={text}></ListItemText>
@@ -79,15 +79,6 @@ class ResponsiveDrawer extends React.Component {
               </Link> 
           ))}
         </List>
-        {/* <Divider />  */}
-        {/* <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List> */}
       </div>
     );
 

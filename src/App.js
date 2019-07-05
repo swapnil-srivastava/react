@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route exact path='/' component={ResponsiveDrawer}/>
-          <Route path='/test' component={Test}/>
+          <Route path='/test/:id' component={Test}/>
         </Switch>
       </div>
     );
