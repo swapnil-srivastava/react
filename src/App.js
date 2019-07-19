@@ -7,6 +7,7 @@ import Test from "./components/Test";
 import CoursesPage from "./components/CoursesPage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import PageNotFound from "./components/PageNotFound";
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/courses" component={CoursesPage} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={SignUp} />
+          <Route component={PageNotFound} />
         </Switch>
       </div>
     );
