@@ -149,8 +149,10 @@ class ResponsiveDrawer extends React.Component {
           <h1>Swapnil Srivastava</h1>
           <h2>React App with Material UI</h2>
           <Typography paragraph>
+            Swapnil is deploying the latest version
+            
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
+            eiusmod tempor incididunt ut laborge et dolore magna aliqua. Rhoncus
             dolor purus non enim praesent elementum facilisis leo vel. Risus at
             ultrices mi tempus imperdiet. Semper risus in hendrerit gravida
             rutrum quisque non tellus. Convallis convallis tellus id interdum
